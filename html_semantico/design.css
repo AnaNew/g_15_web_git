@@ -1,0 +1,79 @@
+.padre{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.primero{
+    background-color: blue;
+    border: 2px solid black;
+    height: 100%;
+    width: 33%;
+    
+}
+
+.segundo{
+    background-color: blue;
+    height: 100%;
+    width: 33%;
+    border: 2px solid black;
+}
+
+.tercero{
+    background-color: orange;
+    border: 2px solid black;
+    height: 100%;
+    width: 33%;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 700px){
+    .padre{
+        flex-wrap: wrap;
+    }
+    .primero{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: 49%;
+    }
+
+    .segundo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 49%;
+    }
+
+    .tercero{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 699px) and (min-width:300px) {
+    .padre{
+        flex-wrap: wrap;
+    }
+    .primero{ 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+    .segundo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    
+    }
+
+    .tercero{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%
+    }
+}
+
+
